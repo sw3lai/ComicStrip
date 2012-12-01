@@ -7,12 +7,18 @@
 //
 
 #import "FirstViewController.h"
+#import "ComicStripCell.h"
+#import "CellModel.h"
 
-@interface FirstViewController ()
+@interface FirstViewController () {
+    NSMutableArray *cellsArray_;
+}
+@property (nonatomic, strong) NSMutableArray *cellsArray;
 
 @end
 
 @implementation FirstViewController
+@synthesize cellsArray = cellsArray_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +40,33 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+{
+    return [cellsArray_ count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ComicStripCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ComicStripCell"];
+    if ([cellsArray_ count] > 0) {
+        CellModel *cellModel = [cellsArray_ objectAtIndex:[indexPath row]];
+        if (cell == nil) {
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ComicStripCell" owner:self options:nil];
+            // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+            cell = [topLevelObjects objectAtIndex:0];
+        }
+        cell.cellModel = cellModel;
+        [cell setupCell];
+        return cell;
+    }
+    return cell;
+}
+
+#pragma mark - Table view delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 480;
 }
 
 @end

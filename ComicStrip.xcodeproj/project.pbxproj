@@ -24,6 +24,8 @@
 		8C75E295166AA62600370C44 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E294166AA62600370C44 /* second@2x.png */; };
 		8C75E298166AA62600370C44 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E296166AA62600370C44 /* FirstViewController.xib */; };
 		8C75E29B166AA62600370C44 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E299166AA62600370C44 /* SecondViewController.xib */; };
+		8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A3166AC78F00370C44 /* ComicStripCell.m */; };
+		8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A7166AC85E00370C44 /* CellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		8C75E294166AA62600370C44 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		8C75E297166AA62600370C44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		8C75E29A166AA62600370C44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		8C75E2A2166AC78F00370C44 /* ComicStripCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicStripCell.h; sourceTree = "<group>"; };
+		8C75E2A3166AC78F00370C44 /* ComicStripCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicStripCell.m; sourceTree = "<group>"; };
+		8C75E2A6166AC85E00370C44 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		8C75E2A7166AC85E00370C44 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 		8C75E276166AA62600370C44 /* ComicStrip */ = {
 			isa = PBXGroup;
 			children = (
+				8C75E2A5166AC84100370C44 /* Models */,
+				8C75E2A1166AC72000370C44 /* Views */,
 				8C75E27F166AA62600370C44 /* AppDelegate.h */,
 				8C75E280166AA62600370C44 /* AppDelegate.m */,
 				8C75E288166AA62600370C44 /* FirstViewController.h */,
@@ -125,6 +133,24 @@
 				8C75E286166AA62600370C44 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C75E2A1166AC72000370C44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C75E2A2166AC78F00370C44 /* ComicStripCell.h */,
+				8C75E2A3166AC78F00370C44 /* ComicStripCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C75E2A5166AC84100370C44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C75E2A6166AC85E00370C44 /* CellModel.h */,
+				8C75E2A7166AC85E00370C44 /* CellModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,8 @@
 				8C75E281166AA62600370C44 /* AppDelegate.m in Sources */,
 				8C75E28A166AA62600370C44 /* FirstViewController.m in Sources */,
 				8C75E291166AA62600370C44 /* SecondViewController.m in Sources */,
+				8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */,
+				8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
