@@ -53,6 +53,8 @@
     
     [_stillCamera startCameraCapture];
     [self showShootButton];
+    
+    self.clearImagePreview.hidden = YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

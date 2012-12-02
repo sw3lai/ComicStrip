@@ -20,11 +20,11 @@
     [super viewWillLayoutSubviews];
     [self.captionView.layer setCornerRadius:10.0f];
     [self.captionView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
-    [self.captionView.layer setBorderWidth:1.0f];
+    [self.captionView.layer setBorderWidth:3.0f];
     [self.captionView.layer setShadowColor:[UIColor blackColor].CGColor];
     [self.captionView.layer setShadowOpacity:0.8];
-    [self.captionView.layer setShadowRadius:2.0];
-    [self.captionView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+    [self.captionView.layer setShadowRadius:3.0];
+    [self.captionView.layer setShadowOffset:CGSizeMake(3.0, 3.0)];
     self.comicThumb.image = cellModel_.comicImage;
     self.captionBox.placeholder = kWriteComicDialog;
     [self.captionBox becomeFirstResponder];
