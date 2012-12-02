@@ -17,6 +17,7 @@
 @synthesize realImageView = realImageView_;
 @synthesize captionLabel = captionLabel_;
 @synthesize dateLabel = dateLabel_;
+@synthesize frameView = frameView_;
 
 - (void)setupCell {
     self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -28,8 +29,8 @@
         dateLabel_.text = [Utils timeRelativeToInterval:cellModel_.dateCreated];
     }
     
-    [comicImageView_.layer setBorderColor: [[UIColor blackColor] CGColor]];
-    [comicImageView_.layer setBorderWidth: 3.0];
+    [frameView_.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [frameView_.layer setBorderWidth: 3.0];
     
     self.realImageView.alpha = 0.0f;
 }

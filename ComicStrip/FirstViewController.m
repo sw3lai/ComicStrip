@@ -35,10 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    for (int i= 0; i < 5; ++i) {
-        [cellsArray_ addObject:[[CellModel alloc] initWithParameters:nil]];
-    }
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
