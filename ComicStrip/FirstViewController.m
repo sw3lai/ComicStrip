@@ -27,6 +27,7 @@
     if (self) {
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.cellsArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -34,6 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    for (int i= 0; i < 5; ++i) {
+        [cellsArray_ addObject:[[CellModel alloc] initWithParameters:nil]];
+    }
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -67,7 +72,7 @@
 
 #pragma mark - Table view delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 480;
+    return 388;
 }
 
 @end

@@ -14,7 +14,7 @@
 #define kCaption                    @"Caption"
 
 #define kFadeDelay                  0.3f
-#define kJustNow                    @"Just now"
+#define kJustNow                    @"now"
 
 @interface Constants : NSObject
 

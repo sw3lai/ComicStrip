@@ -8,14 +8,28 @@
 
 #import "ComicStripCell.h"
 #import "Constants.h"
+#import "Utils.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation ComicStripCell
 @synthesize cellModel = cellModel_;
 @synthesize comicImageView = comicImageView_;
 @synthesize realImageView = realImageView_;
+@synthesize captionLabel = captionLabel_;
+@synthesize dateLabel = dateLabel_;
 
 - (void)setupCell {
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    if (cellModel_) {
+        comicImageView_.image = cellModel_.comicImage;
+        realImageView_.image = cellModel_.realImage;
+        captionLabel_.text = cellModel_.caption;
+        dateLabel_.text = [Utils timeRelativeToInterval:cellModel_.dateCreated];
+    }
+    
+    [comicImageView_.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [comicImageView_.layer setBorderWidth: 3.0];
     
     self.realImageView.alpha = 0.0f;
 }
