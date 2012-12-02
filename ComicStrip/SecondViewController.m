@@ -50,16 +50,8 @@
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
-    
-    [_stillCamera capturePhotoAsImageProcessedUpToFilter:_filter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
-        self.imagePreview.image = processedImage;
-        
-    }];
-    
-    [_stillCamera capturePhotoAsImageProcessedUpToFilter:_clearFilter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
-        self.clearImagePreview.image = processedImage;
-    }];
-
+    self.imagePreview.image = [_filter imageFromCurrentlyProcessedOutput];
+    self.clearImagePreview.image = [_clearFilter imageFromCurrentlyProcessedOutput];
 }
 
 - (void)didReceiveMemoryWarning
