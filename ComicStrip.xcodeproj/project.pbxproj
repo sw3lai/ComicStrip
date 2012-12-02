@@ -27,6 +27,8 @@
 		8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A3166AC78F00370C44 /* ComicStripCell.m */; };
 		8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A7166AC85E00370C44 /* CellModel.m */; };
 		8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */; };
+		8C75E2AD166AD7E000370C44 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AC166AD7E000370C44 /* Constants.m */; };
+		8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AF166ADDFA00370C44 /* Utils.m */; };
 		B664A09A166AD61600716BCD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A099166AD61600716BCD /* CoreMedia.framework */; };
 		B664A09C166AD61D00716BCD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09B166AD61D00716BCD /* CoreVideo.framework */; };
 		B664A09E166AD62500716BCD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09D166AD62500716BCD /* OpenGLES.framework */; };
@@ -102,6 +104,10 @@
 		8C75E2A6166AC85E00370C44 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
 		8C75E2A7166AC85E00370C44 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 		8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicStripCell.xib; sourceTree = "<group>"; };
+		8C75E2AB166AD7E000370C44 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8C75E2AC166AD7E000370C44 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		8C75E2AE166ADDFA00370C44 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		8C75E2AF166ADDFA00370C44 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		B664A089166AD57B00716BCD /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		B664A099166AD61600716BCD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B664A09B166AD61D00716BCD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -214,6 +220,10 @@
 				8C75E282166AA62600370C44 /* Default.png */,
 				8C75E284166AA62600370C44 /* Default@2x.png */,
 				8C75E286166AA62600370C44 /* Default-568h@2x.png */,
+				8C75E2AB166AD7E000370C44 /* Constants.h */,
+				8C75E2AC166AD7E000370C44 /* Constants.m */,
+				8C75E2AE166ADDFA00370C44 /* Utils.h */,
+				8C75E2AF166ADDFA00370C44 /* Utils.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,6 +390,8 @@
 				8C75E291166AA62600370C44 /* SecondViewController.m in Sources */,
 				8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */,
 				8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */,
+				8C75E2AD166AD7E000370C44 /* Constants.m in Sources */,
+				8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */,
 				B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +443,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -446,7 +458,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "91F6D6DF-4048-4745-818E-EECCA932AB33";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
