@@ -107,6 +107,11 @@
     self.rejectButton.hidden = NO;
 }
 
+- (IBAction)cancelAddFrame:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+    }];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
