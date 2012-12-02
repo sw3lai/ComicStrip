@@ -25,6 +25,9 @@
 		8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */; };
 		8C75E2AD166AD7E000370C44 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AC166AD7E000370C44 /* Constants.m */; };
 		8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AF166ADDFA00370C44 /* Utils.m */; };
+		8CEAD7E8166B7E46006CCE6C /* bam.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD7E7166B7E46006CCE6C /* bam.png */; };
+		8CEAD7EA166B7EC8006CCE6C /* bam.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD7E9166B7EC8006CCE6C /* bam.png */; };
+		8CEAD7EC166B7ED4006CCE6C /* bam.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD7EB166B7ED4006CCE6C /* bam.png */; };
 		8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C0166B306900D3636A /* CaptionViewController.m */; };
 		8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF779C2166B328300D3636A /* CaptionViewController.xib */; };
 		8CF779C6166B4BEE00D3636A /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */; };
@@ -99,6 +102,9 @@
 		8C75E2AC166AD7E000370C44 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8C75E2AE166ADDFA00370C44 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		8C75E2AF166ADDFA00370C44 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		8CEAD7E7166B7E46006CCE6C /* bam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bam.png; sourceTree = "<group>"; };
+		8CEAD7E9166B7EC8006CCE6C /* bam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bam.png; sourceTree = "<group>"; };
+		8CEAD7EB166B7ED4006CCE6C /* bam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bam.png; sourceTree = "<group>"; };
 		8CF779BF166B306900D3636A /* CaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionViewController.h; sourceTree = "<group>"; };
 		8CF779C0166B306900D3636A /* CaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionViewController.m; sourceTree = "<group>"; };
 		8CF779C2166B328300D3636A /* CaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 		8C75E261166AA62600370C44 = {
 			isa = PBXGroup;
 			children = (
+				8CEAD7EB166B7ED4006CCE6C /* bam.png */,
+				8CEAD7E7166B7E46006CCE6C /* bam.png */,
 				B664A0A1166AD63000716BCD /* QuartzCore.framework */,
 				B664A09F166AD62B00716BCD /* AVFoundation.framework */,
 				B664A09D166AD62500716BCD /* OpenGLES.framework */,
@@ -256,6 +264,7 @@
 		B6BAAD50166B05C4008D3A4C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8CEAD7E9166B7EC8006CCE6C /* bam.png */,
 				B69C5AE4166B71CF00372ABF /* comicstrip_create.png */,
 				B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */,
 				B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */,
@@ -363,6 +372,9 @@
 				8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */,
 				B69C5AA8166B49B100372ABF /* glCameraIconCancel@2x.png in Resources */,
 				B69C5AE5166B71CF00372ABF /* comicstrip_create.png in Resources */,
+				8CEAD7E8166B7E46006CCE6C /* bam.png in Resources */,
+				8CEAD7EA166B7EC8006CCE6C /* bam.png in Resources */,
+				8CEAD7EC166B7ED4006CCE6C /* bam.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +500,7 @@
 				INFOPLIST_FILE = "ComicStrip/ComicStrip-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "91F6D6DF-4048-4745-818E-EECCA932AB33";
+				PROVISIONING_PROFILE = "3A563FF3-322D-4099-B446-6E8AC92C04A8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

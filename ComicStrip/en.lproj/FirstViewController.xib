@@ -206,7 +206,7 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="553718189">
+							<object class="IBNSLayoutConstraint" id="610025484">
 								<reference key="firstItem" ref="994827121"/>
 								<int key="firstAttribute">4</int>
 								<int key="relation">0</int>
@@ -306,7 +306,7 @@
 						<int key="objectID">36</int>
 						<reference key="object" ref="558987639"/>
 						<array class="NSMutableArray" key="children">
-							<object class="IBNSLayoutConstraint" id="838642086">
+							<object class="IBNSLayoutConstraint" id="157411598">
 								<reference key="firstItem" ref="558987639"/>
 								<int key="firstAttribute">7</int>
 								<int key="relation">0</int>
@@ -322,7 +322,7 @@
 								<float key="scoringTypeFloat">9</float>
 								<int key="contentType">1</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="421255198">
+							<object class="IBNSLayoutConstraint" id="1023824119">
 								<reference key="firstItem" ref="558987639"/>
 								<int key="firstAttribute">8</int>
 								<int key="relation">0</int>
@@ -348,7 +348,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">50</int>
-						<reference key="object" ref="553718189"/>
+						<reference key="object" ref="610025484"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -363,12 +363,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">68</int>
-						<reference key="object" ref="421255198"/>
+						<reference key="object" ref="1023824119"/>
 						<reference key="parent" ref="558987639"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">69</int>
-						<reference key="object" ref="838642086"/>
+						<reference key="object" ref="157411598"/>
 						<reference key="parent" ref="558987639"/>
 					</object>
 				</array>
@@ -383,7 +383,7 @@
 					<reference ref="89726925"/>
 					<reference ref="41354870"/>
 					<reference ref="948774909"/>
-					<reference ref="553718189"/>
+					<reference ref="610025484"/>
 					<reference ref="541737432"/>
 					<reference ref="900745148"/>
 				</array>
@@ -394,8 +394,8 @@
 				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="36.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<array class="NSMutableArray" key="36.IBViewMetadataConstraints">
-					<reference ref="421255198"/>
-					<reference ref="838642086"/>
+					<reference ref="1023824119"/>
+					<reference ref="157411598"/>
 				</array>
 				<boolean value="NO" key="36.IBViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="50.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
