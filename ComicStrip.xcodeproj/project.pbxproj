@@ -180,7 +180,7 @@
 			children = (
 				8C75E2A5166AC84100370C44 /* Models */,
 				B69C5AB4166B590300372ABF /* Views */,
-				B69C5AB5166B590B00372ABF /* Countrollers */,
+				B69C5AB5166B590B00372ABF /* Controllers */,
 				8C75E27F166AA62600370C44 /* AppDelegate.h */,
 				8C75E280166AA62600370C44 /* AppDelegate.m */,
 				B6BAAD50166B05C4008D3A4C /* Assets */,
@@ -240,7 +240,7 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		B69C5AB5166B590B00372ABF /* Countrollers */ = {
+		B69C5AB5166B590B00372ABF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				8C75E288166AA62600370C44 /* FirstViewController.h */,
@@ -250,7 +250,7 @@
 				8CF779BF166B306900D3636A /* CaptionViewController.h */,
 				8CF779C0166B306900D3636A /* CaptionViewController.m */,
 			);
-			name = Countrollers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		B6BAAD50166B05C4008D3A4C /* Assets */ = {
