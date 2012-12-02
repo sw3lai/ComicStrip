@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GPUImageStillCamera.h"
+#import "GPUImageView.h"
 @interface SecondViewController : UIViewController
+@property (nonatomic, weak) IBOutlet GPUImageView *gpuImageView;
+@property (nonatomic, weak) IBOutlet GPUImageView *clearGpuImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *clearImagePreview;
+@property (nonatomic, weak) IBOutlet UIImageView *imagePreview;
 
 @end

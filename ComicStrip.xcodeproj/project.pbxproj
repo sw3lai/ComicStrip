@@ -35,6 +35,18 @@
 		B664A0A3166AD66A00716BCD /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A093166AD57C00716BCD /* libGPUImage.a */; };
 		B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */; };
 		B6BAAD32166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */; };
+		B6BAAD5D166B06E1008D3A4C /* glCameraCaptureButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */; };
+		B6BAAD5E166B06E1008D3A4C /* glCameraCaptureButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */; };
+		B6BAAD5F166B06E1008D3A4C /* glCameraCaptureButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5B166B06E1008D3A4C /* glCameraCaptureButtonPressed.png */; };
+		B6BAAD60166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5C166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png */; };
+		B6BAAD65166B0996008D3A4C /* glCameraBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD61166B0996008D3A4C /* glCameraBackground.png */; };
+		B6BAAD66166B0996008D3A4C /* glCameraBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */; };
+		B6BAAD67166B0996008D3A4C /* glCameraCaptureBar.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD63166B0996008D3A4C /* glCameraCaptureBar.png */; };
+		B6BAAD68166B0996008D3A4C /* glCameraCaptureBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD64166B0996008D3A4C /* glCameraCaptureBar@2x.png */; };
+		B6BAAD6D166B09A8008D3A4C /* glCameraToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD69166B09A8008D3A4C /* glCameraToolbar.png */; };
+		B6BAAD6E166B09A8008D3A4C /* glCameraToolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD6A166B09A8008D3A4C /* glCameraToolbar@2x.png */; };
+		B6BAAD6F166B09A8008D3A4C /* glCameraTray.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD6B166B09A8008D3A4C /* glCameraTray.png */; };
+		B6BAAD70166B09A8008D3A4C /* glCameraTray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD6C166B09A8008D3A4C /* glCameraTray@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +111,18 @@
 		B6BAAD2E166AD8EA008D3A4C /* SimpleVideoFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleVideoFilterViewController.h; sourceTree = "<group>"; };
 		B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleVideoFilterViewController.m; sourceTree = "<group>"; };
 		B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleVideoFilterViewController.xib; sourceTree = "<group>"; };
+		B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraCaptureButton.png; sourceTree = "<group>"; };
+		B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureButton@2x.png"; sourceTree = "<group>"; };
+		B6BAAD5B166B06E1008D3A4C /* glCameraCaptureButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraCaptureButtonPressed.png; sourceTree = "<group>"; };
+		B6BAAD5C166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureButtonPressed@2x.png"; sourceTree = "<group>"; };
+		B6BAAD61166B0996008D3A4C /* glCameraBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraBackground.png; sourceTree = "<group>"; };
+		B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraBackground@2x.png"; sourceTree = "<group>"; };
+		B6BAAD63166B0996008D3A4C /* glCameraCaptureBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraCaptureBar.png; sourceTree = "<group>"; };
+		B6BAAD64166B0996008D3A4C /* glCameraCaptureBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureBar@2x.png"; sourceTree = "<group>"; };
+		B6BAAD69166B09A8008D3A4C /* glCameraToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraToolbar.png; sourceTree = "<group>"; };
+		B6BAAD6A166B09A8008D3A4C /* glCameraToolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraToolbar@2x.png"; sourceTree = "<group>"; };
+		B6BAAD6B166B09A8008D3A4C /* glCameraTray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraTray.png; sourceTree = "<group>"; };
+		B6BAAD6C166B09A8008D3A4C /* glCameraTray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraTray@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +198,7 @@
 				8C75E294166AA62600370C44 /* second@2x.png */,
 				8C75E296166AA62600370C44 /* FirstViewController.xib */,
 				8C75E299166AA62600370C44 /* SecondViewController.xib */,
+				B6BAAD50166B05C4008D3A4C /* Assets */,
 				8C75E277166AA62600370C44 /* Supporting Files */,
 			);
 			path = ComicStrip;
@@ -219,6 +244,25 @@
 				B664A095166AD57C00716BCD /* GPUImageTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B6BAAD50166B05C4008D3A4C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B6BAAD61166B0996008D3A4C /* glCameraBackground.png */,
+				B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */,
+				B6BAAD63166B0996008D3A4C /* glCameraCaptureBar.png */,
+				B6BAAD64166B0996008D3A4C /* glCameraCaptureBar@2x.png */,
+				B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */,
+				B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */,
+				B6BAAD5B166B06E1008D3A4C /* glCameraCaptureButtonPressed.png */,
+				B6BAAD5C166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png */,
+				B6BAAD69166B09A8008D3A4C /* glCameraToolbar.png */,
+				B6BAAD6A166B09A8008D3A4C /* glCameraToolbar@2x.png */,
+				B6BAAD6B166B09A8008D3A4C /* glCameraTray.png */,
+				B6BAAD6C166B09A8008D3A4C /* glCameraTray@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +352,18 @@
 				8C75E29B166AA62600370C44 /* SecondViewController.xib in Resources */,
 				8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */,
 				B6BAAD32166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib in Resources */,
+				B6BAAD5D166B06E1008D3A4C /* glCameraCaptureButton.png in Resources */,
+				B6BAAD5E166B06E1008D3A4C /* glCameraCaptureButton@2x.png in Resources */,
+				B6BAAD5F166B06E1008D3A4C /* glCameraCaptureButtonPressed.png in Resources */,
+				B6BAAD60166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png in Resources */,
+				B6BAAD65166B0996008D3A4C /* glCameraBackground.png in Resources */,
+				B6BAAD66166B0996008D3A4C /* glCameraBackground@2x.png in Resources */,
+				B6BAAD67166B0996008D3A4C /* glCameraCaptureBar.png in Resources */,
+				B6BAAD68166B0996008D3A4C /* glCameraCaptureBar@2x.png in Resources */,
+				B6BAAD6D166B09A8008D3A4C /* glCameraToolbar.png in Resources */,
+				B6BAAD6E166B09A8008D3A4C /* glCameraToolbar@2x.png in Resources */,
+				B6BAAD6F166B09A8008D3A4C /* glCameraTray.png in Resources */,
+				B6BAAD70166B09A8008D3A4C /* glCameraTray@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
