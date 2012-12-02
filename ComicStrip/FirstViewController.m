@@ -28,7 +28,6 @@
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         _viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-
     }
     return self;
 }
@@ -39,14 +38,6 @@
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     cellsArray_ = [[NSMutableArray alloc] initWithArray:appDelegate.cellsArray];
 	// Do any additional setup after loading the view, typically from a nib.
-    UIButton *startButton = [[UIButton alloc] init];
-    startButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    startButton.tag = 1;
-    startButton.frame = CGRectMake(0, 0, 64, 45);
-    [startButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tabBar-camera" ofType:@"png"]] forState:UIControlStateNormal];
-    startButton.adjustsImageWhenHighlighted = NO;
-    [startButton addTarget:self action:@selector(cameraInvoked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.cellTableView setTableHeaderView:startButton];
 }
 
 - (IBAction)cameraInvoked:(id)sender {
@@ -99,6 +90,12 @@
 #pragma mark - Table view delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 388;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
 @end
