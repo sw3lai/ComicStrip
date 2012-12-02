@@ -57,8 +57,20 @@
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
-    self.imagePreview.image = [_filter imageFromCurrentlyProcessedOutput];
-    self.clearImagePreview.image = [_clearFilter imageFromCurrentlyProcessedOutput];
+    CGRect imageRect = CGRectMake(0.0, 20 + self.imagePreview.frame.origin.y*2, 640.0f, 640.0f);
+    
+    UIImage *filteredImage = [_filter imageFromCurrentlyProcessedOutput];
+    CGImageRef filteredImageRef = CGImageCreateWithImageInRect(filteredImage.CGImage, imageRect);
+    UIImage *filteredRetImage = [UIImage imageWithCGImage:filteredImageRef scale:filteredImage.scale orientation:filteredImage.imageOrientation];
+    CGImageRelease(filteredImageRef);
+    self.imagePreview.image = filteredRetImage;
+    
+    
+    UIImage *clearImage = [_clearFilter imageFromCurrentlyProcessedOutput];
+    CGImageRef clearImageRef = CGImageCreateWithImageInRect(clearImage.CGImage, imageRect);
+    UIImage *clearRetImage = [UIImage imageWithCGImage:clearImageRef scale:clearImage.scale orientation:clearImage.imageOrientation];
+    CGImageRelease(clearImageRef);
+    self.clearImagePreview.image = clearRetImage;
     [self showAcceptRejectButtons];
 }
 
