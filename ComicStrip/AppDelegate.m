@@ -11,6 +11,7 @@
 #import "FirstViewController.h"
 
 #import "SecondViewController.h"
+#import "SimpleVideoFilterViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,9 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+//    UIViewController *viewController2 = [[SimpleVideoFilterViewController alloc] initWithNibName:@"SimpleVideoFilterViewController" bundle:nil];
+//    viewController2.view.frame = [[UIScreen mainScreen] bounds];
+//    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Photo" image:nil tag:1];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
