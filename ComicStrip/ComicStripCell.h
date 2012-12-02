@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *comicImageView;
 @property (nonatomic, weak) IBOutlet UIImageView *realImageView;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *captionLabel;
 
 - (void)setupCell;
 

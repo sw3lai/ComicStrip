@@ -11,9 +11,13 @@
 @interface CellModel : NSObject {
     UIImage *comicImage_;
     UIImage *realImage_;
+    NSTimeInterval dateCreated_;
 }
 
 @property (nonatomic, strong) UIImage *comicImage;
 @property (nonatomic, strong) UIImage *realImage;
+@property (nonatomic) NSTimeInterval dateCreated;
+
+- (id)initWithComicImage:(UIImage *)comicImage andRealImage:(UIImage *)realImage;
 
 @end

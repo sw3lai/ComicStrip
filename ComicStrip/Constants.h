@@ -10,6 +10,7 @@
 
 #define kComicStripCellXibId        @"ComicStripCell"
 #define kFadeDelay                  0.3f
+#define kJustNow                    @"Just now"
 
 @interface Constants : NSObject
 
