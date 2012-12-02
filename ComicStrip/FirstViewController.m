@@ -78,13 +78,23 @@
     //Adding objects
     if ([keyPath isEqualToString:kCellsArray] && [[change objectForKey:NSKeyValueChangeNewKey] count] > 0) {
         [cellsArray_ insertObjects:[change objectForKey:NSKeyValueChangeNewKey] atIndexes:[change objectForKey:kIndexes]];
+        NSMutableArray *indexPathArrayForInsertion = [[NSMutableArray alloc] init];
+        NSIndexPath *indexPathForInsertion = [NSIndexPath indexPathForRow:0 inSection:0];
+        [indexPathArrayForInsertion addObject:indexPathForInsertion];
+
+        [self.cellTableView beginUpdates];
+        if ([[self cellTableView] numberOfRowsInSection:0] > 0) {
+            [self.cellTableView scrollToRowAtIndexPath:indexPathForInsertion atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        }
+        [self.cellTableView insertRowsAtIndexPaths:indexPathArrayForInsertion withRowAnimation:UITableViewRowAnimationTop];
+        [self.cellTableView endUpdates];
     }
     //Removing objects
     if ([keyPath isEqualToString:kCellsArray] && [[change objectForKey:NSKeyValueChangeOldKey] count] > 0) {
         [cellsArray_ removeObjectsAtIndexes:[change objectForKey:kIndexes]];
     }
     
-    [self.cellTableView reloadData];
+//    [self.cellTableView reloadData];
 }
 
 #pragma mark - Table view delegate

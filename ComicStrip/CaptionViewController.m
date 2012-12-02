@@ -46,12 +46,11 @@
 - (IBAction)acceptButtonPressed:(id)sender {
     cellModel_.caption = self.captionBox.text;
 
-    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [[appDelegate mutableArrayValueForKey:kCellsArray] insertObject:cellModel_ atIndex:0];
-    
     [self.view removeFromSuperview];
     
     [previousViewController_ dismissViewControllerAnimated:YES completion:^{
+        AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+        [[appDelegate mutableArrayValueForKey:kCellsArray] insertObject:cellModel_ atIndex:0];
     }];
 }
 
