@@ -8,6 +8,7 @@
 
 #import "CaptionViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Constants.h"
 
 @implementation CaptionViewController {
     CellModel *cellModel_;
@@ -23,6 +24,7 @@
     [self.captionView.layer setShadowRadius:2.0];
     [self.captionView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
     self.comicThumb.image = cellModel_.comicImage;
+    self.captionBox.placeholder = kWriteComicDialog;
 }
 
 - (id)initWithModel:(CellModel *)model {

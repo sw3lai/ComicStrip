@@ -15,6 +15,7 @@
 
 #define kFadeDelay                  0.3f
 #define kJustNow                    @"now"
+#define kWriteComicDialog           @"Write a comic dialog..."
 
 @interface Constants : NSObject
 
