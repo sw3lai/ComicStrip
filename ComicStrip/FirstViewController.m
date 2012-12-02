@@ -10,9 +10,10 @@
 #import "ComicStripCell.h"
 #import "CellModel.h"
 #import "Constants.h"
-
+#import "SecondViewController.h"
 @interface FirstViewController () {
     NSMutableArray *cellsArray_;
+    UIViewController *_viewController2;
 }
 @property (nonatomic, strong) NSMutableArray *cellsArray;
 
@@ -28,6 +29,8 @@
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
         self.cellsArray = [[NSMutableArray alloc] init];
+        _viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+
     }
     return self;
 }
@@ -36,6 +39,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)cameraInvoked:(id)sender {
+    [self presentViewController:_viewController2 animated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

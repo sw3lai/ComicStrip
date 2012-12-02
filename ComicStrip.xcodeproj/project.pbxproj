@@ -35,6 +35,12 @@
 		B664A0A0166AD62B00716BCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09F166AD62B00716BCD /* AVFoundation.framework */; };
 		B664A0A2166AD63000716BCD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A0A1166AD63000716BCD /* QuartzCore.framework */; };
 		B664A0A3166AD66A00716BCD /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A093166AD57C00716BCD /* libGPUImage.a */; };
+		B69C5A86166B1AD100372ABF /* tabBar-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A84166B1AD100372ABF /* tabBar-camera.png */; };
+		B69C5A87166B1AD100372ABF /* tabBar-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A85166B1AD100372ABF /* tabBar-camera@2x.png */; };
+		B69C5A8A166B1D7000372ABF /* glCameraReject.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A88166B1D7000372ABF /* glCameraReject.png */; };
+		B69C5A8B166B1D7000372ABF /* glCameraReject@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */; };
+		B69C5A8E166B1D8200372ABF /* glCameraAccept.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A8C166B1D8200372ABF /* glCameraAccept.png */; };
+		B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */; };
 		B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */; };
 		B6BAAD32166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */; };
 		B6BAAD5D166B06E1008D3A4C /* glCameraCaptureButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */; };
@@ -114,6 +120,12 @@
 		B664A09D166AD62500716BCD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B664A09F166AD62B00716BCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B664A0A1166AD63000716BCD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B69C5A84166B1AD100372ABF /* tabBar-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera.png"; sourceTree = "<group>"; };
+		B69C5A85166B1AD100372ABF /* tabBar-camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar-camera@2x.png"; sourceTree = "<group>"; };
+		B69C5A88166B1D7000372ABF /* glCameraReject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraReject.png; sourceTree = "<group>"; };
+		B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraReject@2x.png"; sourceTree = "<group>"; };
+		B69C5A8C166B1D8200372ABF /* glCameraAccept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraAccept.png; sourceTree = "<group>"; };
+		B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraAccept@2x.png"; sourceTree = "<group>"; };
 		B6BAAD2E166AD8EA008D3A4C /* SimpleVideoFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleVideoFilterViewController.h; sourceTree = "<group>"; };
 		B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleVideoFilterViewController.m; sourceTree = "<group>"; };
 		B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleVideoFilterViewController.xib; sourceTree = "<group>"; };
@@ -259,6 +271,12 @@
 		B6BAAD50166B05C4008D3A4C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B69C5A8C166B1D8200372ABF /* glCameraAccept.png */,
+				B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */,
+				B69C5A88166B1D7000372ABF /* glCameraReject.png */,
+				B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */,
+				B69C5A84166B1AD100372ABF /* tabBar-camera.png */,
+				B69C5A85166B1AD100372ABF /* tabBar-camera@2x.png */,
 				B6BAAD61166B0996008D3A4C /* glCameraBackground.png */,
 				B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */,
 				B6BAAD63166B0996008D3A4C /* glCameraCaptureBar.png */,
@@ -374,6 +392,12 @@
 				B6BAAD6E166B09A8008D3A4C /* glCameraToolbar@2x.png in Resources */,
 				B6BAAD6F166B09A8008D3A4C /* glCameraTray.png in Resources */,
 				B6BAAD70166B09A8008D3A4C /* glCameraTray@2x.png in Resources */,
+				B69C5A86166B1AD100372ABF /* tabBar-camera.png in Resources */,
+				B69C5A87166B1AD100372ABF /* tabBar-camera@2x.png in Resources */,
+				B69C5A8A166B1D7000372ABF /* glCameraReject.png in Resources */,
+				B69C5A8B166B1D7000372ABF /* glCameraReject@2x.png in Resources */,
+				B69C5A8E166B1D8200372ABF /* glCameraAccept.png in Resources */,
+				B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +467,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,6 +483,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "91F6D6DF-4048-4745-818E-EECCA932AB33";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
