@@ -8,6 +8,8 @@
 
 #import "SecondViewController.h"
 #import "GPUImageSketchFilter.h"
+#import "CaptionViewController.h"
+
 @interface SecondViewController () {
     GPUImageOutput<GPUImageInput> *_filter;
     GPUImageOutput<GPUImageInput> *_clearFilter;
@@ -61,6 +63,32 @@
 
 - (IBAction)acceptButtonPressed:(id)sender {
     [self showShootButton];
+    CaptionViewController *captionViewController = [[CaptionViewController alloc] initWithNibName:@"CaptionViewController" bundle:nil];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIView * fromView = [self view];
+        UIView * toView = [captionViewController view];
+        
+        // Get the size of the view area.
+        CGRect viewSize = fromView.frame;
+        BOOL scrollRight = YES;
+        
+        // Add the to view to the tab bar view.
+        [fromView.superview addSubview:toView];
+        
+        // Position it off screen.
+        toView.frame = CGRectMake((scrollRight ? 320 : -320), viewSize.origin.y, 320, viewSize.size.height);
+        
+        [UIView
+         animateWithDuration:0.4
+         animations: ^{
+             // Animate the views on and off the screen. This will appear to slide.
+             fromView.frame =CGRectMake((scrollRight ? -320 : 320), viewSize.origin.y, 320, viewSize.size.height);
+             toView.frame =CGRectMake(0, viewSize.origin.y, 320, viewSize.size.height);
+         }
+         completion:^(BOOL finished) {
+         }];
+    });
+    
 }
 
 - (IBAction)rejectButtonPressed:(id)sender {
