@@ -9,21 +9,29 @@
 #import "CaptionViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation CaptionViewController
-@synthesize captionView = captionView_;
-@synthesize captionBox = captionBox_;
-@synthesize acceptButton = acceptButton_;
-@synthesize discardButton = discardButton_;
-@synthesize comicThumb = comicThumb_;
+@implementation CaptionViewController {
+    CellModel *cellModel_;
+}
 
-- (void) customInit {
-    [captionView_.layer setCornerRadius:30.0f];
-    [captionView_.layer setBorderColor:[UIColor lightGrayColor].CGColor];
-    [captionView_.layer setBorderWidth:1.5f];
-    [captionView_.layer setShadowColor:[UIColor blackColor].CGColor];
-    [captionView_.layer setShadowOpacity:0.8];
-    [captionView_.layer setShadowRadius:3.0];
-    [captionView_.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self.captionView.layer setCornerRadius:10.0f];
+    [self.captionView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.captionView.layer setBorderWidth:1.0f];
+    [self.captionView.layer setShadowColor:[UIColor blackColor].CGColor];
+    [self.captionView.layer setShadowOpacity:0.8];
+    [self.captionView.layer setShadowRadius:2.0];
+    [self.captionView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+    self.comicThumb.image = cellModel_.comicImage;
+}
+
+- (id)initWithModel:(CellModel *)model {
+    self = [super initWithNibName:@"CaptionViewController" bundle:nil];
+    
+    if (self) {
+        cellModel_ = model;
+    }
+    return self;
 }
 
 - (IBAction)acceptButtonPressed:(id)sender {

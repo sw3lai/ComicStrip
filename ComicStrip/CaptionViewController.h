@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CellModel.h"
 
 @interface CaptionViewController : UIViewController
 
@@ -16,6 +17,6 @@
 @property (nonatomic, weak) IBOutlet UIButton *acceptButton;
 @property (nonatomic, weak) IBOutlet UIButton *discardButton;
 
-- (void) customInit;
+- (id)initWithModel:(CellModel *)model;
 
 @end

@@ -8,10 +8,14 @@
 
 #import "SecondViewController.h"
 #import "GPUImageSketchFilter.h"
+#import "CaptionViewController.h"
+#import "Constants.h"
+
 @interface SecondViewController () {
     GPUImageOutput<GPUImageInput> *_filter;
     GPUImageOutput<GPUImageInput> *_clearFilter;
     GPUImageStillCamera *_stillCamera;
+    UIViewController *_captionViewController;
 }
 @property (nonatomic, strong) IBOutlet UIButton *shootButton;
 @property (nonatomic, strong) IBOutlet UIButton *acceptButton;
@@ -60,6 +64,16 @@
 }
 
 - (IBAction)acceptButtonPressed:(id)sender {
+    NSDictionary *modelParams = [[NSMutableDictionary alloc] init];
+    [modelParams setValue:self.imagePreview.image forKey:kComicImage];
+    [modelParams setValue:self.clearImagePreview.image forKey:kRealImage];
+    
+    CellModel *model = [[CellModel alloc] initWithParameters:modelParams];
+    _captionViewController = [[CaptionViewController alloc] initWithModel:model];
+    
+    [self presentViewController:_captionViewController animated:YES completion:^{
+    }];
+    
     [self showShootButton];
 }
 
