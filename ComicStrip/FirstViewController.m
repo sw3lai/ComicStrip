@@ -39,6 +39,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIButton *startButton = [[UIButton alloc] init];
+    startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    startButton.tag = 1;
+    startButton.frame = CGRectMake(0, 0, 64, 45);
+    [startButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tabBar-camera" ofType:@"png"]] forState:UIControlStateNormal];
+    startButton.adjustsImageWhenHighlighted = NO;
+    [startButton addTarget:self action:@selector(cameraInvoked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.cellTableView setTableHeaderView:startButton];
 }
 
 - (IBAction)cameraInvoked:(id)sender {
