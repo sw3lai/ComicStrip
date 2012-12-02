@@ -9,4 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) IBOutlet UITableView *cellTableView;
 @end
