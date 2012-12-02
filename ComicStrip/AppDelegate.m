@@ -9,14 +9,21 @@
 #import "AppDelegate.h"
 
 #import "FirstViewController.h"
+#import "Constants.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    NSMutableArray *cellsArray_;
+}
+
+@synthesize cellsArray = cellsArray_;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    cellsArray_ = [[NSMutableArray alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    [self addObserver:viewController1 forKeyPath:kCellsArray options:( NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:nil];
     self.window.rootViewController = viewController1;
     [self.window makeKeyAndVisible];
     return YES;

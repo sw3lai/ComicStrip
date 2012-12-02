@@ -17,6 +17,9 @@
 #define kJustNow                    @"now"
 #define kWriteComicDialog           @"Write a comic dialog..."
 
+#define kCellsArray                 @"cellsArray_"
+#define kIndexes                    @"indexes"
+
 @interface Constants : NSObject
 
 @end

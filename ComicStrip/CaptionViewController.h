@@ -19,5 +19,6 @@
 @property (nonatomic, weak) IBOutlet UIButton *discardButton;
 
 - (id)initWithModel:(CellModel *)model;
+- (void)setPreviousView:(UIViewController *)prevView;
 
 @end

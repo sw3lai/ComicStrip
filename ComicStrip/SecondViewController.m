@@ -15,6 +15,7 @@
     GPUImageOutput<GPUImageInput> *_filter;
     GPUImageOutput<GPUImageInput> *_clearFilter;
     GPUImageStillCamera *_stillCamera;
+    CaptionViewController *_captionViewController;
 }
 @property (nonatomic, strong) IBOutlet UIButton *shootButton;
 @property (nonatomic, strong) IBOutlet UIButton *acceptButton;
@@ -82,10 +83,12 @@
     CellModel *model = [[CellModel alloc] initWithParameters:modelParams];
     
     [self showShootButton];
-    CaptionViewController *captionViewController = [[CaptionViewController alloc] initWithModel:model];
+    _captionViewController = [[CaptionViewController alloc] initWithModel:model];
+    [_captionViewController setPreviousView:self];
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         UIView * fromView = [self view];
-        UIView * toView = [captionViewController view];
+        UIView * toView = [_captionViewController view];
         
         // Get the size of the view area.
         CGRect viewSize = fromView.frame;
