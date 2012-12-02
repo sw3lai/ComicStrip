@@ -25,7 +25,6 @@
 		8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */; };
 		8C75E2AD166AD7E000370C44 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AC166AD7E000370C44 /* Constants.m */; };
 		8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AF166ADDFA00370C44 /* Utils.m */; };
-		8CEAD7D9166B6DB4006CCE6C /* comicstrip_create.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAD7D8166B6DB4006CCE6C /* comicstrip_create.png */; };
 		8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C0166B306900D3636A /* CaptionViewController.m */; };
 		8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF779C2166B328300D3636A /* CaptionViewController.xib */; };
 		8CF779C6166B4BEE00D3636A /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */; };
@@ -38,6 +37,7 @@
 		B69C5A8B166B1D7000372ABF /* glCameraReject@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */; };
 		B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */; };
 		B69C5AA8166B49B100372ABF /* glCameraIconCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5AA6166B49B100372ABF /* glCameraIconCancel@2x.png */; };
+		B69C5AE5166B71CF00372ABF /* comicstrip_create.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5AE4166B71CF00372ABF /* comicstrip_create.png */; };
 		B6BAAD5E166B06E1008D3A4C /* glCameraCaptureButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */; };
 		B6BAAD60166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5C166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png */; };
 		B6BAAD66166B0996008D3A4C /* glCameraBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */; };
@@ -99,7 +99,6 @@
 		8C75E2AC166AD7E000370C44 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8C75E2AE166ADDFA00370C44 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		8C75E2AF166ADDFA00370C44 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		8CEAD7D8166B6DB4006CCE6C /* comicstrip_create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = comicstrip_create.png; path = ../../../Downloads/comicstrip_create.png; sourceTree = "<group>"; };
 		8CF779BF166B306900D3636A /* CaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionViewController.h; sourceTree = "<group>"; };
 		8CF779C0166B306900D3636A /* CaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionViewController.m; sourceTree = "<group>"; };
 		8CF779C2166B328300D3636A /* CaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +113,7 @@
 		B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraReject@2x.png"; sourceTree = "<group>"; };
 		B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraAccept@2x.png"; sourceTree = "<group>"; };
 		B69C5AA6166B49B100372ABF /* glCameraIconCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraIconCancel@2x.png"; sourceTree = "<group>"; };
+		B69C5AE4166B71CF00372ABF /* comicstrip_create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comicstrip_create.png; sourceTree = "<group>"; };
 		B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureButton@2x.png"; sourceTree = "<group>"; };
 		B6BAAD5C166B06E1008D3A4C /* glCameraCaptureButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureButtonPressed@2x.png"; sourceTree = "<group>"; };
 		B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraBackground@2x.png"; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 		B6BAAD50166B05C4008D3A4C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8CEAD7D8166B6DB4006CCE6C /* comicstrip_create.png */,
+				B69C5AE4166B71CF00372ABF /* comicstrip_create.png */,
 				B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */,
 				B69C5A89166B1D7000372ABF /* glCameraReject@2x.png */,
 				B6BAAD62166B0996008D3A4C /* glCameraBackground@2x.png */,
@@ -362,7 +362,7 @@
 				B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */,
 				8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */,
 				B69C5AA8166B49B100372ABF /* glCameraIconCancel@2x.png in Resources */,
-				8CEAD7D9166B6DB4006CCE6C /* comicstrip_create.png in Resources */,
+				B69C5AE5166B71CF00372ABF /* comicstrip_create.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +434,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -450,6 +450,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "91F6D6DF-4048-4745-818E-EECCA932AB33";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "91F6D6DF-4048-4745-818E-EECCA932AB33";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -463,7 +464,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: kenneth yip";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -471,6 +472,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C20896DD-67AC-466D-8111-6DE90EBFB3D0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -486,7 +488,7 @@
 				INFOPLIST_FILE = "ComicStrip/ComicStrip-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3A563FF3-322D-4099-B446-6E8AC92C04A8";
+				PROVISIONING_PROFILE = "91F6D6DF-4048-4745-818E-EECCA932AB33";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
