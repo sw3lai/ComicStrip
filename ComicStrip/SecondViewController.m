@@ -132,6 +132,7 @@
 }
 
 - (IBAction)cancelAddFrame:(id)sender {
+    [self showShootButton];
     [self dismissViewControllerAnimated:YES completion:^{
     }];
 }
