@@ -14,6 +14,8 @@
     GPUImageStillCamera *_stillCamera;
 }
 @property (nonatomic, strong) IBOutlet UIButton *shootButton;
+@property (nonatomic, strong) IBOutlet UIButton *acceptButton;
+@property (nonatomic, strong) IBOutlet UIButton *rejectButton;
 @end
 
 @implementation SecondViewController
@@ -46,12 +48,35 @@
     [_clearFilter addTarget:clearFilterView];
     
     [_stillCamera startCameraCapture];
+    [self showShootButton];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
+    [self showAcceptRejectButtons];
+    
     self.imagePreview.image = [_filter imageFromCurrentlyProcessedOutput];
     self.clearImagePreview.image = [_clearFilter imageFromCurrentlyProcessedOutput];
+}
+
+- (IBAction)acceptButtonPressed:(id)sender {
+    [self showShootButton];
+}
+
+- (IBAction)rejectButtonPressed:(id)sender {
+    [self showShootButton];
+}
+
+- (void)showShootButton {
+    self.shootButton.hidden = NO;
+    self.acceptButton.hidden = YES;
+    self.rejectButton.hidden = YES;
+}
+
+- (void)showAcceptRejectButtons {
+    self.shootButton.hidden = YES;
+    self.acceptButton.hidden = NO;
+    self.rejectButton.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning

@@ -29,6 +29,8 @@
 		8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */; };
 		8C75E2AD166AD7E000370C44 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AC166AD7E000370C44 /* Constants.m */; };
 		8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AF166ADDFA00370C44 /* Utils.m */; };
+		8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C0166B306900D3636A /* CaptionViewController.m */; };
+		8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF779C2166B328300D3636A /* CaptionViewController.xib */; };
 		B664A09A166AD61600716BCD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A099166AD61600716BCD /* CoreMedia.framework */; };
 		B664A09C166AD61D00716BCD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09B166AD61D00716BCD /* CoreVideo.framework */; };
 		B664A09E166AD62500716BCD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09D166AD62500716BCD /* OpenGLES.framework */; };
@@ -114,6 +116,9 @@
 		8C75E2AC166AD7E000370C44 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8C75E2AE166ADDFA00370C44 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		8C75E2AF166ADDFA00370C44 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		8CF779BF166B306900D3636A /* CaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionViewController.h; sourceTree = "<group>"; };
+		8CF779C0166B306900D3636A /* CaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionViewController.m; sourceTree = "<group>"; };
+		8CF779C2166B328300D3636A /* CaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionViewController.xib; sourceTree = "<group>"; };
 		B664A089166AD57B00716BCD /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		B664A099166AD61600716BCD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B664A09B166AD61D00716BCD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -199,11 +204,13 @@
 		8C75E276166AA62600370C44 /* ComicStrip */ = {
 			isa = PBXGroup;
 			children = (
+				8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */,
+				8C75E2A3166AC78F00370C44 /* ComicStripCell.m */,
+				8C75E2A2166AC78F00370C44 /* ComicStripCell.h */,
 				B6BAAD2E166AD8EA008D3A4C /* SimpleVideoFilterViewController.h */,
 				B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */,
 				B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */,
 				8C75E2A5166AC84100370C44 /* Models */,
-				8C75E2A1166AC72000370C44 /* Views */,
 				8C75E27F166AA62600370C44 /* AppDelegate.h */,
 				8C75E280166AA62600370C44 /* AppDelegate.m */,
 				8C75E288166AA62600370C44 /* FirstViewController.h */,
@@ -218,6 +225,9 @@
 				8C75E299166AA62600370C44 /* SecondViewController.xib */,
 				B6BAAD50166B05C4008D3A4C /* Assets */,
 				8C75E277166AA62600370C44 /* Supporting Files */,
+				8CF779BF166B306900D3636A /* CaptionViewController.h */,
+				8CF779C0166B306900D3636A /* CaptionViewController.m */,
+				8CF779C2166B328300D3636A /* CaptionViewController.xib */,
 			);
 			path = ComicStrip;
 			sourceTree = "<group>";
@@ -238,16 +248,6 @@
 				8C75E2AF166ADDFA00370C44 /* Utils.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8C75E2A1166AC72000370C44 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8C75E2A2166AC78F00370C44 /* ComicStripCell.h */,
-				8C75E2A3166AC78F00370C44 /* ComicStripCell.m */,
-				8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		8C75E2A5166AC84100370C44 /* Models */ = {
@@ -398,6 +398,7 @@
 				B69C5A8B166B1D7000372ABF /* glCameraReject@2x.png in Resources */,
 				B69C5A8E166B1D8200372ABF /* glCameraAccept.png in Resources */,
 				B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */,
+				8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +418,7 @@
 				8C75E2AD166AD7E000370C44 /* Constants.m in Sources */,
 				8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */,
 				B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */,
+				8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,12 +515,14 @@
 		8C75E29F166AA62600370C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComicStrip/ComicStrip-Prefix.pch";
 				HEADER_SEARCH_PATHS = ./GPUImage/framework/Source;
 				INFOPLIST_FILE = "ComicStrip/ComicStrip-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3A563FF3-322D-4099-B446-6E8AC92C04A8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
