@@ -11,12 +11,12 @@
 
 @interface ComicStripCell : UITableViewCell {
     CellModel *cellModel_;
-    
 }
 
 @property (nonatomic, strong) CellModel *cellModel;
-@property (nonatomic, assign) IBOutlet UIImageView *comicImageView;
-@property (nonatomic, assign) IBOutlet UIImageView *realImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *comicImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *realImageView;
+@property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 
 - (void)setupCell;
 
