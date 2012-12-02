@@ -46,8 +46,6 @@
 		B69C5A8F166B1D8200372ABF /* glCameraAccept@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */; };
 		B69C5AA7166B49B100372ABF /* glCameraIconCancel.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5AA5166B49B100372ABF /* glCameraIconCancel.png */; };
 		B69C5AA8166B49B100372ABF /* glCameraIconCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C5AA6166B49B100372ABF /* glCameraIconCancel@2x.png */; };
-		B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */; };
-		B6BAAD32166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */; };
 		B6BAAD5D166B06E1008D3A4C /* glCameraCaptureButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */; };
 		B6BAAD5E166B06E1008D3A4C /* glCameraCaptureButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */; };
 		B6BAAD5F166B06E1008D3A4C /* glCameraCaptureButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BAAD5B166B06E1008D3A4C /* glCameraCaptureButtonPressed.png */; };
@@ -138,9 +136,6 @@
 		B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraAccept@2x.png"; sourceTree = "<group>"; };
 		B69C5AA5166B49B100372ABF /* glCameraIconCancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraIconCancel.png; sourceTree = "<group>"; };
 		B69C5AA6166B49B100372ABF /* glCameraIconCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraIconCancel@2x.png"; sourceTree = "<group>"; };
-		B6BAAD2E166AD8EA008D3A4C /* SimpleVideoFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleVideoFilterViewController.h; sourceTree = "<group>"; };
-		B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleVideoFilterViewController.m; sourceTree = "<group>"; };
-		B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleVideoFilterViewController.xib; sourceTree = "<group>"; };
 		B6BAAD59166B06E1008D3A4C /* glCameraCaptureButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraCaptureButton.png; sourceTree = "<group>"; };
 		B6BAAD5A166B06E1008D3A4C /* glCameraCaptureButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glCameraCaptureButton@2x.png"; sourceTree = "<group>"; };
 		B6BAAD5B166B06E1008D3A4C /* glCameraCaptureButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glCameraCaptureButtonPressed.png; sourceTree = "<group>"; };
@@ -211,32 +206,13 @@
 		8C75E276166AA62600370C44 /* ComicStrip */ = {
 			isa = PBXGroup;
 			children = (
-				8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */,
-				8C75E2A3166AC78F00370C44 /* ComicStripCell.m */,
-				8C75E2A2166AC78F00370C44 /* ComicStripCell.h */,
-				B6BAAD2E166AD8EA008D3A4C /* SimpleVideoFilterViewController.h */,
-				B6BAAD2F166AD8EA008D3A4C /* SimpleVideoFilterViewController.m */,
-				B6BAAD30166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib */,
 				8C75E2A5166AC84100370C44 /* Models */,
+				B69C5AB4166B590300372ABF /* Views */,
+				B69C5AB5166B590B00372ABF /* Countrollers */,
 				8C75E27F166AA62600370C44 /* AppDelegate.h */,
 				8C75E280166AA62600370C44 /* AppDelegate.m */,
-				8C75E288166AA62600370C44 /* FirstViewController.h */,
-				8C75E289166AA62600370C44 /* FirstViewController.m */,
-				8C75E28B166AA62600370C44 /* first.png */,
-				8C75E28D166AA62600370C44 /* first@2x.png */,
-				8C75E28F166AA62600370C44 /* SecondViewController.h */,
-				8C75E290166AA62600370C44 /* SecondViewController.m */,
-				8C75E292166AA62600370C44 /* second.png */,
-				8C75E294166AA62600370C44 /* second@2x.png */,
-				8C75E296166AA62600370C44 /* FirstViewController.xib */,
-				8C75E299166AA62600370C44 /* SecondViewController.xib */,
 				B6BAAD50166B05C4008D3A4C /* Assets */,
 				8C75E277166AA62600370C44 /* Supporting Files */,
-				8CF779BF166B306900D3636A /* CaptionViewController.h */,
-				8CF779C0166B306900D3636A /* CaptionViewController.m */,
-				8CF779C2166B328300D3636A /* CaptionViewController.xib */,
-				8CF779C4166B4BEC00D3636A /* UIPlaceholderTextView.h */,
-				8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */,
 			);
 			path = ComicStrip;
 			sourceTree = "<group>";
@@ -277,9 +253,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B69C5AB4166B590300372ABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CF779C4166B4BEC00D3636A /* UIPlaceholderTextView.h */,
+				8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */,
+				8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */,
+				8C75E2A3166AC78F00370C44 /* ComicStripCell.m */,
+				8C75E2A2166AC78F00370C44 /* ComicStripCell.h */,
+				8C75E296166AA62600370C44 /* FirstViewController.xib */,
+				8C75E299166AA62600370C44 /* SecondViewController.xib */,
+				8CF779C2166B328300D3636A /* CaptionViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B69C5AB5166B590B00372ABF /* Countrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8C75E288166AA62600370C44 /* FirstViewController.h */,
+				8C75E289166AA62600370C44 /* FirstViewController.m */,
+				8C75E28F166AA62600370C44 /* SecondViewController.h */,
+				8C75E290166AA62600370C44 /* SecondViewController.m */,
+				8CF779BF166B306900D3636A /* CaptionViewController.h */,
+				8CF779C0166B306900D3636A /* CaptionViewController.m */,
+			);
+			name = Countrollers;
+			sourceTree = "<group>";
+		};
 		B6BAAD50166B05C4008D3A4C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8C75E28B166AA62600370C44 /* first.png */,
+				8C75E28D166AA62600370C44 /* first@2x.png */,
+				8C75E292166AA62600370C44 /* second.png */,
+				8C75E294166AA62600370C44 /* second@2x.png */,
 				B69C5A8C166B1D8200372ABF /* glCameraAccept.png */,
 				B69C5A8D166B1D8200372ABF /* glCameraAccept@2x.png */,
 				B69C5A88166B1D7000372ABF /* glCameraReject.png */,
@@ -390,7 +398,6 @@
 				8C75E298166AA62600370C44 /* FirstViewController.xib in Resources */,
 				8C75E29B166AA62600370C44 /* SecondViewController.xib in Resources */,
 				8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */,
-				B6BAAD32166AD8EA008D3A4C /* SimpleVideoFilterViewController.xib in Resources */,
 				B6BAAD5D166B06E1008D3A4C /* glCameraCaptureButton.png in Resources */,
 				B6BAAD5E166B06E1008D3A4C /* glCameraCaptureButton@2x.png in Resources */,
 				B6BAAD5F166B06E1008D3A4C /* glCameraCaptureButtonPressed.png in Resources */,
@@ -430,7 +437,6 @@
 				8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */,
 				8C75E2AD166AD7E000370C44 /* Constants.m in Sources */,
 				8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */,
-				B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */,
 				8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */,
 				8CF779C6166B4BEE00D3636A /* UIPlaceholderTextView.m in Sources */,
 			);

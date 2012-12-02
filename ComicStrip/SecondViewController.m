@@ -57,13 +57,13 @@
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
-    [self showAcceptRejectButtons];
-    
     self.imagePreview.image = [_filter imageFromCurrentlyProcessedOutput];
     self.clearImagePreview.image = [_clearFilter imageFromCurrentlyProcessedOutput];
+    [self showAcceptRejectButtons];
 }
 
 - (IBAction)acceptButtonPressed:(id)sender {
+    
     NSDictionary *modelParams = [[NSMutableDictionary alloc] init];
     [modelParams setValue:self.imagePreview.image forKey:kComicImage];
     [modelParams setValue:self.clearImagePreview.image forKey:kRealImage];
@@ -109,12 +109,14 @@
     self.shootButton.hidden = NO;
     self.acceptButton.hidden = YES;
     self.rejectButton.hidden = YES;
+    self.imagePreview.hidden = YES;
 }
 
 - (void)showAcceptRejectButtons {
     self.shootButton.hidden = YES;
     self.acceptButton.hidden = NO;
     self.rejectButton.hidden = NO;
+    self.imagePreview.hidden = NO;
 }
 
 - (IBAction)cancelAddFrame:(id)sender {
