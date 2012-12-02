@@ -11,16 +11,15 @@
 #import "CellModel.h"
 #import "Constants.h"
 #import "SecondViewController.h"
+#import "AppDelegate.h"
 @interface FirstViewController () {
-    NSMutableArray *cellsArray_;
     UIViewController *_viewController2;
+    NSMutableArray *cellsArray_;
 }
-@property (nonatomic, strong) NSMutableArray *cellsArray;
 
 @end
 
 @implementation FirstViewController
-@synthesize cellsArray = cellsArray_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +27,6 @@
     if (self) {
         self.title = NSLocalizedString(@"First", @"First");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
-        self.cellsArray = [[NSMutableArray alloc] init];
         _viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
 
     }
@@ -38,6 +36,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    cellsArray_ = [[NSMutableArray alloc] initWithArray:appDelegate.cellsArray];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -73,6 +73,19 @@
         return cell;
     }
     return cell;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    //Adding objects
+    if ([keyPath isEqualToString:kCellsArray] && [[change objectForKey:NSKeyValueChangeNewKey] count] > 0) {
+        [cellsArray_ insertObjects:[change objectForKey:NSKeyValueChangeNewKey] atIndexes:[change objectForKey:kIndexes]];
+    }
+    //Removing objects
+    if ([keyPath isEqualToString:kCellsArray] && [[change objectForKey:NSKeyValueChangeOldKey] count] > 0) {
+        [cellsArray_ removeObjectsAtIndexes:[change objectForKey:kIndexes]];
+    }
+    
+    [self.cellTableView reloadData];
 }
 
 #pragma mark - Table view delegate
