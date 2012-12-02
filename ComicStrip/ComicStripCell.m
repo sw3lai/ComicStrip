@@ -25,7 +25,7 @@
     if (cellModel_) {
         comicImageView_.image = cellModel_.comicImage;
         realImageView_.image = cellModel_.realImage;
-        captionLabel_.text = cellModel_.caption;
+        captionLabel_.text = [cellModel_.caption uppercaseString];
         dateLabel_.text = [Utils timeRelativeToInterval:cellModel_.dateCreated];
     }
     

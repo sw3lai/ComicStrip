@@ -20,7 +20,7 @@
     if (self) {
         comicImage_ = [parameters objectForKey:kComicImage];
         realImage_ = [parameters objectForKey:kRealImage];
-        caption_ = [[parameters objectForKey:kCaption] uppercaseString];
+        caption_ = [parameters objectForKey:kCaption];
         dateCreated_ = [[NSDate date] timeIntervalSince1970];
     }
     return self;
