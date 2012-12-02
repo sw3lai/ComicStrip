@@ -27,6 +27,7 @@
 		8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A3166AC78F00370C44 /* ComicStripCell.m */; };
 		8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2A7166AC85E00370C44 /* CellModel.m */; };
 		8C75E2AA166ACB0400370C44 /* ComicStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */; };
+		8C75E2AD166AD7E000370C44 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AC166AD7E000370C44 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		8C75E2A6166AC85E00370C44 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
 		8C75E2A7166AC85E00370C44 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 		8C75E2A9166ACB0400370C44 /* ComicStripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicStripCell.xib; sourceTree = "<group>"; };
+		8C75E2AB166AD7E000370C44 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8C75E2AC166AD7E000370C44 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				8C75E282166AA62600370C44 /* Default.png */,
 				8C75E284166AA62600370C44 /* Default@2x.png */,
 				8C75E286166AA62600370C44 /* Default-568h@2x.png */,
+				8C75E2AB166AD7E000370C44 /* Constants.h */,
+				8C75E2AC166AD7E000370C44 /* Constants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				8C75E291166AA62600370C44 /* SecondViewController.m in Sources */,
 				8C75E2A4166AC78F00370C44 /* ComicStripCell.m in Sources */,
 				8C75E2A8166AC85E00370C44 /* CellModel.m in Sources */,
+				8C75E2AD166AD7E000370C44 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

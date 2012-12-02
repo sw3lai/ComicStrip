@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "ComicStripCell.h"
 #import "CellModel.h"
+#import "Constants.h"
 
 @interface FirstViewController () {
     NSMutableArray *cellsArray_;
@@ -49,11 +50,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ComicStripCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ComicStripCell"];
+    ComicStripCell *cell = [tableView dequeueReusableCellWithIdentifier:kComicStripCellXibId];
     if ([cellsArray_ count] > 0) {
         CellModel *cellModel = [cellsArray_ objectAtIndex:[indexPath row]];
         if (cell == nil) {
-            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ComicStripCell" owner:self options:nil];
+            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:kComicStripCellXibId owner:self options:nil];
             // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
             cell = [topLevelObjects objectAtIndex:0];
         }
