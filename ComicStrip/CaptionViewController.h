@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "CellModel.h"
+#import "UIPlaceholderTextView.h"
 
 @interface CaptionViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIView *captionView;
 @property (nonatomic, weak) IBOutlet UIImageView *comicThumb;
-@property (nonatomic, weak) IBOutlet UITextView *captionBox;
+@property (nonatomic, weak) IBOutlet UIPlaceHolderTextView *captionBox;
 @property (nonatomic, weak) IBOutlet UIButton *acceptButton;
 @property (nonatomic, weak) IBOutlet UIButton *discardButton;
 

@@ -31,6 +31,7 @@
 		8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E2AF166ADDFA00370C44 /* Utils.m */; };
 		8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C0166B306900D3636A /* CaptionViewController.m */; };
 		8CF779C3166B328300D3636A /* CaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF779C2166B328300D3636A /* CaptionViewController.xib */; };
+		8CF779C6166B4BEE00D3636A /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */; };
 		B664A09A166AD61600716BCD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A099166AD61600716BCD /* CoreMedia.framework */; };
 		B664A09C166AD61D00716BCD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09B166AD61D00716BCD /* CoreVideo.framework */; };
 		B664A09E166AD62500716BCD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B664A09D166AD62500716BCD /* OpenGLES.framework */; };
@@ -119,6 +120,8 @@
 		8CF779BF166B306900D3636A /* CaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionViewController.h; sourceTree = "<group>"; };
 		8CF779C0166B306900D3636A /* CaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionViewController.m; sourceTree = "<group>"; };
 		8CF779C2166B328300D3636A /* CaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptionViewController.xib; sourceTree = "<group>"; };
+		8CF779C4166B4BEC00D3636A /* UIPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceholderTextView.h; sourceTree = "<group>"; };
+		8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceholderTextView.m; sourceTree = "<group>"; };
 		B664A089166AD57B00716BCD /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		B664A099166AD61600716BCD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B664A09B166AD61D00716BCD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -228,6 +231,8 @@
 				8CF779BF166B306900D3636A /* CaptionViewController.h */,
 				8CF779C0166B306900D3636A /* CaptionViewController.m */,
 				8CF779C2166B328300D3636A /* CaptionViewController.xib */,
+				8CF779C4166B4BEC00D3636A /* UIPlaceholderTextView.h */,
+				8CF779C5166B4BED00D3636A /* UIPlaceholderTextView.m */,
 			);
 			path = ComicStrip;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				8C75E2B0166ADDFA00370C44 /* Utils.m in Sources */,
 				B6BAAD31166AD8EA008D3A4C /* SimpleVideoFilterViewController.m in Sources */,
 				8CF779C1166B306900D3636A /* CaptionViewController.m in Sources */,
+				8CF779C6166B4BEE00D3636A /* UIPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
