@@ -7,17 +7,20 @@
 //
 
 #import "CellModel.h"
+#import "Constants.h"
 
 @implementation CellModel
 @synthesize comicImage = comicImage_;
 @synthesize realImage = realImage_;
 @synthesize dateCreated = dateCreated_;
+@synthesize caption = caption_;
 
-- (id)initWithComicImage:(UIImage *)comicImg andRealImage:(UIImage *)realImg {
+- (id)initWithParameters:(NSDictionary *)parameters {
     self = [super init];
     if (self) {
-        comicImage_ = comicImg;
-        realImage_ = realImg;
+        comicImage_ = [parameters objectForKey:kComicImage];
+        realImage_ = [parameters objectForKey:kRealImage];
+        caption_ = [parameters objectForKey:kCaption];
         dateCreated_ = [[NSDate date] timeIntervalSince1970];
     }
     return self;

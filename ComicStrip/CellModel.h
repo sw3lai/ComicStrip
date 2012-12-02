@@ -12,12 +12,14 @@
     UIImage *comicImage_;
     UIImage *realImage_;
     NSTimeInterval dateCreated_;
+    NSString *caption_;
 }
 
 @property (nonatomic, strong) UIImage *comicImage;
 @property (nonatomic, strong) UIImage *realImage;
+@property (nonatomic, strong) NSString *caption;
 @property (nonatomic) NSTimeInterval dateCreated;
 
-- (id)initWithComicImage:(UIImage *)comicImage andRealImage:(UIImage *)realImage;
+- (id)initWithParameters:(NSDictionary *)parameters;
 
 @end
