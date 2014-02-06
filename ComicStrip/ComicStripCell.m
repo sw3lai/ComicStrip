@@ -35,41 +35,33 @@
     self.realImageView.alpha = 0.0f;
     self.transform = CGAffineTransformMakeRotation(M_PI * 0.5);
 
+    UILongPressGestureRecognizer* longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressDetected:)];
+    
+    longPressGesture.minimumPressDuration = 0.1;
+    [self.frameView addGestureRecognizer:longPressGesture];
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesBegan");
-    [super touchesBegan:touches withEvent:event];
-    if (self.realImageView.image == nil) {
-        return;
-    } else {
-        [UIView animateWithDuration:kFadeDelay animations:^{
-            self.realImageView.alpha = 1.0f;
-        }];
+-(void) longPressDetected:(UILongPressGestureRecognizer *)gesture{
+    if(gesture.state == UIGestureRecognizerStateBegan)
+    {
+        if (self.realImageView.image == nil) {
+            return;
+        } else {
+            [UIView animateWithDuration:kFadeDelay animations:^{
+                self.realImageView.alpha = 1.0f;
+            }];
+        }
     }
-}
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesEnded");
-    [super touchesEnded:touches withEvent:event];
-    if (self.realImageView.image == nil) {
-        return;
-    } else {
-        [UIView animateWithDuration:kFadeDelay animations:^{
-            self.realImageView.alpha = 0.0f;
-        }];
-    }
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesCancelled");
-    [super touchesCancelled:touches withEvent:event];
-    if (self.realImageView.image == nil) {
-        return;
-    } else {
-        [UIView animateWithDuration:kFadeDelay animations:^{
-            self.realImageView.alpha = 0.0f;
-        }];
+    if(gesture.state == UIGestureRecognizerStateEnded)
+    {
+        if (self.realImageView.image == nil) {
+            return;
+        } else {
+            [UIView animateWithDuration:kFadeDelay animations:^{
+                self.realImageView.alpha = 0.0f;
+            }];
+        }
     }
 }
 
