@@ -44,7 +44,9 @@
     _filter = [[GPUImageSketchFilter alloc] init];
     [_stillCamera addTarget:_filter];
     GPUImageView *filterView = (GPUImageView *)self.gpuImageView;
+    [filterView setFillMode:kGPUImageFillModePreserveAspectRatioAndFill];
     [_filter addTarget:filterView];
+    
     
     _clearFilter = [[GPUImageFilter alloc] init];
     [_stillCamera addTarget:_clearFilter];
@@ -54,19 +56,18 @@
     [_stillCamera startCameraCapture];
     [self showShootButton];
     
-    self.clearImagePreview.hidden = YES;
+    self.clearImagePreview.hidden = NO;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
-    CGRect imageRect = CGRectMake(0.0, 20 + self.imagePreview.frame.origin.y*2, 640.0f, 640.0f);
+    CGRect imageRect = CGRectMake(0.0, -20 + self.imagePreview.frame.origin.y*2, 640.0f, 640.0f);
     
     UIImage *filteredImage = [_filter imageFromCurrentlyProcessedOutput];
     CGImageRef filteredImageRef = CGImageCreateWithImageInRect(filteredImage.CGImage, imageRect);
     UIImage *filteredRetImage = [UIImage imageWithCGImage:filteredImageRef scale:filteredImage.scale orientation:filteredImage.imageOrientation];
     CGImageRelease(filteredImageRef);
     self.imagePreview.image = filteredRetImage;
-    
     
     UIImage *clearImage = [_clearFilter imageFromCurrentlyProcessedOutput];
     CGImageRef clearImageRef = CGImageCreateWithImageInRect(clearImage.CGImage, imageRect);
@@ -84,7 +85,6 @@
     
     CellModel *model = [[CellModel alloc] initWithParameters:modelParams];
     
-    [self showShootButton];
     _captionViewController = [[CaptionViewController alloc] initWithModel:model];
     [_captionViewController setPreviousView:self];
     
@@ -110,6 +110,7 @@
              toView.frame =CGRectMake(0, viewSize.origin.y, 320, viewSize.size.height);
          }
          completion:^(BOOL finished) {
+             [self showShootButton];
          }];
     });
     

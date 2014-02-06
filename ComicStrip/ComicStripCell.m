@@ -33,6 +33,8 @@
     [frameView_.layer setBorderWidth: 3.0];
     
     self.realImageView.alpha = 0.0f;
+    self.transform = CGAffineTransformMakeRotation(M_PI * 0.5);
+
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

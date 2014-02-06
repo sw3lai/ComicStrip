@@ -38,6 +38,16 @@
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     cellsArray_ = [[NSMutableArray alloc] initWithArray:appDelegate.cellsArray];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.cellTableView.showsVerticalScrollIndicator = NO;
+    self.cellTableView.showsHorizontalScrollIndicator = NO;
+    self.cellTableView.transform = CGAffineTransformMakeRotation(-M_PI * 0.5);
+    self.cellTableView.frame = CGRectMake(0, 20, 320, 388);
+    
+    self.cellTableView.rowHeight = 388;
+    
+    self.cellTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.cellTableView.separatorColor = [UIColor clearColor];
 }
 
 - (IBAction)cameraInvoked:(id)sender {
@@ -99,7 +109,7 @@
 
 #pragma mark - Table view delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 388;
+    return 320;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

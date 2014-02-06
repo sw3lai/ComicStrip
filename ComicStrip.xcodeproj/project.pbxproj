@@ -308,6 +308,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "David Lai";
+				TargetAttributes = {
+					8C75E26B166AA62600370C44 = {
+						DevelopmentTeam = HU7JNDHGF7;
+					};
+				};
 			};
 			buildConfigurationList = 8C75E266166AA62600370C44 /* Build configuration list for PBXProject "ComicStrip" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -445,8 +450,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -461,8 +466,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "91F6D6DF-4048-4745-818E-EECCA932AB33";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "91F6D6DF-4048-4745-818E-EECCA932AB33";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -493,14 +498,15 @@
 		8C75E29F166AA62600370C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: kenneth yip (MZCKG49Y4Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComicStrip/ComicStrip-Prefix.pch";
 				HEADER_SEARCH_PATHS = ./GPUImage/framework/Source;
 				INFOPLIST_FILE = "ComicStrip/ComicStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3A563FF3-322D-4099-B446-6E8AC92C04A8";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -508,10 +514,12 @@
 		8C75E2A0166AA62600370C44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComicStrip/ComicStrip-Prefix.pch";
 				HEADER_SEARCH_PATHS = ./GPUImage/framework/Source;
 				INFOPLIST_FILE = "ComicStrip/ComicStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
